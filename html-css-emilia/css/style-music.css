@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;   
+}
+header{
+    background: url("../img/emilia-music-top.jpg") no-repeat right top fixed;
+    background-size: cover;
+    height: 200px;
+    float: left;
+    width: 100%;
+    }
+section{
+    float: left;
+    margin-left: 1%;
+}
+nav{
+    margin-top: 15px;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    z-index: 2;   
+}
+nav a{
+    color:#000;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: left;
+    z-index: 22;   
+}
+#flotante{
+    background:  rgba(255, 255, 255, 0.4);
+    display: block;
+    height: 50px;
+    position: absolute;
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+    z-index: 10;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+h4{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 5%;
+}
+h6{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    margin-top: 2%;
+}
+h6 a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    text-decoration: none;   
+}
+i{
+    color: black;
+    position: relative;  
+}
+ul{
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    font-weight: 100;
+    margin-top: 1%;
+    
+    list-style: none;
+    text-decoration: none;
+}
+ul li{
+    font-size: 0.9em;
+    margin-bottom: 1%;
+
+}
+ul li i{
+    font-size: 9px;
+}
+.dlinks{
+    display: block;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 4px;
+}
+.dlinks a{
+    color: grey;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+#list{
+    margin-left: 1%;
+}
+#redes{
+    float: right;
+    margin-top: 80px;
+    margin-right: 20px;
+    position: absolute;
+    text-align: right;
+    width:100%;
+    z-index: 2;    
+}
+#redes a{
+   
+    margin-right: 2px;
+     
+}
+#icons{
+    margin-right: 10px;
+    color: black;
+}
+.enlaces{
+    color:#000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-top: auto;
+    padding: 2px;
+    text-decoration: none;
+    text-align: right;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
+}
+.componentes{
+    margin-bottom: 5%;
+}
