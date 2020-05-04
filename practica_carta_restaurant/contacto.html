@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--<META HTTP-EQUIV="REFRESH" CONTENT="2"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>SANTA MARIA - BAR</title>
+</head>
+<body>
+  
+    <div id="contenedor">
+        <form action="" method="">
+        <label>¿De dónde sos?</label>
+        <select><option>
+            Seleccioná una opción
+        </option></select>
+        <label>¿Qué te pareció la iluminación?</label>
+        <label><input type="checkbox" value="acorde" class="check"> Muy acorde</input></label>
+        <label><input type="checkbox" value="buena" class="check"> Buena, pero podría mejorar</input></label>
+        <label><input type="checkbox" value="mala" class="check"> Mala</input></label>
+                    
+            <label>¿Qué tipo de plato fue el que más te gustó?</label>
+            <label for="entrada"><input type="checkbox" id="entrada" name="entrada"> Entrada</label>
+
+            <label for="principal"><input type="checkbox" value="principal" class="check" id="principal"></input> Plato principal</label>
+
+            <label for="postre"><input type="checkbox" value="postre" class="check" id="postre"></input> Postre</label>
+
+            <label for="otros"><input type="checkbox" value="otros" class="check" id="otros"></input> Otros</label>
+        
+
+        <label>¿Recomendarías el lugar?</label>
+        <input type="radio" value="Si"> Si</input>
+        <input type="radio" value="No"> No</input></br>
+        
+        <label for="porque" class="pq">¿Porqué?</label>
+        
+        <textarea name="porque" id="" class="textarea"cols="55" rows="5"></textarea>
+        <label>Dejanos tus datos y nos pondremos en contacto con vos</label>
+        <label>Nombre <input type="text" required placeholder="tu nombre"></label>
+
+        
+        <label>Email <input type="email" required placeholder="tu email"></label>
+        
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="resetear">Resetear</button>
+
+    </form>
+</div>
+</body>
+</html>
+
+
