@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<%- include('partials/head') %>
+</head>
+
+<body>
+	<!-- Header -->
+	<%- include('partials/header') %>
+	<!-- /Header -->
+
+	<!-- Banner -->
+	<div class="banner"><img class="col-12 banner" src="images/img-home-banner.jpg" alt=""></div>
+	<!-- /Banner -->
+
+		<!-- Últimas búsquedas -->
+		<div class="container products-wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="products-title">Basado en tu última visita</h2>
+				</div>
+				<% for( let product of visited) { %>
+				<!-- Show the category "visited" products -->
+				<div class="col-12 col-sm-6 col-lg-3">
+					<%- include("partials/product",{product}) %>
+				</div>
+				<% } %>
+			</div>
+		</div>
+		<!-- /Últimas búsquedas -->
+
+		<!-- Ofertas -->
+		<div class="container products-wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="products-title">Ofertas</h2>
+				</div>
+				<% for( let product of inSale) { %>
+				<!-- Show the "visited" products -->
+				<div class="col-12 col-sm-6 col-lg-3">
+					<%- include("partials/product",{product}) %>
+				</div>
+				<% } %>
+			</div>
+		</div>
+		<!-- /Ofertas -->
+
+	
+
+	<!-- Footer -->
+	<%- include('partials/footer') %>
+	<!-- /Footer -->
+
+	<script src="/javascripts/bootstrap.min.js"></script>
+	<script src="/javascripts/jquery-3.5.1.min.js"></script>
+	<script src="/javascripts/main.js"></script>
+</body>
+
+</html>

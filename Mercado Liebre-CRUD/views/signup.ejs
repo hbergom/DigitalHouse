@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head", {title: "Registrarse"})  %>
+</head>
+<body>
+    <%- include("partials/header")  %>  <!-- NO ESTÁ IMPLEMENTADO -->
+
+    <div class="container">
+        <form  class="m-5 col-6" action="/users/register" method="POST" enctype="multipart/form-data">
+            <!-- nombre -->
+            <div class="form-group">
+                <label for="nombre"><h3>Nombre</h3></label>
+                <input  type="text" class="form-input" name="firstname" id="firstname" placeholder="" required>
+            </div>
+            <!-- apellido -->
+            <div class="form-group">
+                <label for="apellido"> <h3>Apellido</h3></label>
+                <input class="form-input" type="text" name="lastname" id="lastname" required>
+            </div>
+            <!-- email -->
+            <div class="form-group">
+                <label for="email"> <h3>Correo Electrónico</h3></label>
+                <input class="form-input" type="email" name="email" id="email" required>
+            </div>
+            <!-- contraseña -->
+            <div class="form-group">
+                <label for="contraseña"> <h3>Contraseña</h3></label>
+                <input class="form-input" type="password" name="password" id="password" required>
+            </div>
+            <!-- verificacion -->
+            <div class="form-group">
+                <label for="password2"><h3>Repita Contraseña</h3></label>
+                <input class="form-input" type="password" name="password2" id="password2" required>
+            </div>
+            <!-- avatar -->
+            <div class="custom-file">
+                <label for="avatar"><h3>Subir imagen de perfil</h3></label>
+                <input type="file" class="custom-file-input" name="avatar" id="avatar">
+            </div> <br><br>
+
+            <button class="btn" type="submit">Registrarse</button>
+        </form>
+    </div>
+
+</body>
+</html>
